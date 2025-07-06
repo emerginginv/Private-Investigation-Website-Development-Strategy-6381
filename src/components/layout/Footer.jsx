@@ -116,6 +116,11 @@ const Footer = () => {
                   Jacksonville Private Investigators
                 </Link>
               </li>
+              <li>
+                <Link to="/locations/naples" className="text-gray-300 hover:text-white transition-colors text-sm">
+                  Naples Private Investigators
+                </Link>
+              </li>
             </ul>
             <div className="pt-4">
               <h4 className="text-sm font-semibold text-white mb-2">Quick Links</h4>
@@ -139,42 +144,22 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white">Professional Resources</h3>
             <ul className="space-y-2">
               <li>
-                <a 
-                  href="https://www.myfloridalicense.com/wl11.asp?mode=0&SID=&brd=1503" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors text-sm"
-                >
+                <a href="https://www.myfloridalicense.com/wl11.asp?mode=0&SID=&brd=1503" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">
                   FL License Verification
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://www.fdle.state.fl.us/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors text-sm"
-                >
+                <a href="https://www.fdle.state.fl.us/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">
                   Florida Department of Law Enforcement
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://www.flcourts.gov/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors text-sm"
-                >
+                <a href="https://www.flcourts.gov/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">
                   Florida Courts System
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://www.myfloridacfo.com/division/iff/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors text-sm"
-                >
+                <a href="https://www.myfloridacfo.com/division/iff/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">
                   FL Insurance Fraud Division
                 </a>
               </li>

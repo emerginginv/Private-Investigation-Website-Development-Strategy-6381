@@ -24,6 +24,7 @@ import Miami from './pages/locations/Miami';
 import Orlando from './pages/locations/Orlando';
 import Tampa from './pages/locations/Tampa';
 import Jacksonville from './pages/locations/Jacksonville';
+import Naples from './pages/locations/Naples';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
               <Route path="/locations/orlando" element={<Orlando />} />
               <Route path="/locations/tampa" element={<Tampa />} />
               <Route path="/locations/jacksonville" element={<Jacksonville />} />
+              <Route path="/locations/naples" element={<Naples />} />
             </Routes>
           </main>
           <Footer />

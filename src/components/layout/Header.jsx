@@ -30,7 +30,8 @@ const Header = () => {
     { name: 'Miami Private Investigators', path: '/locations/miami' },
     { name: 'Orlando Private Investigators', path: '/locations/orlando' },
     { name: 'Tampa Private Investigators', path: '/locations/tampa' },
-    { name: 'Jacksonville Private Investigators', path: '/locations/jacksonville' }
+    { name: 'Jacksonville Private Investigators', path: '/locations/jacksonville' },
+    { name: 'Naples Private Investigators', path: '/locations/naples' }
   ];
 
   return (

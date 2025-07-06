@@ -52,14 +52,15 @@ const Home = () => {
     { name: 'Miami', link: '/locations/miami' },
     { name: 'Orlando', link: '/locations/orlando' },
     { name: 'Tampa', link: '/locations/tampa' },
-    { name: 'Jacksonville', link: '/locations/jacksonville' }
+    { name: 'Jacksonville', link: '/locations/jacksonville' },
+    { name: 'Naples', link: '/locations/naples' }
   ];
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Emerging Investigations",
-    "description": "Professional private investigation services across Florida including surveillance, background checks, due diligence, and corporate investigations.",
+    "description": "Expert private investigation services across Florida including surveillance, background checks, due diligence, and corporate investigations.",
     "url": "https://emerginginv.com",
     "telephone": "813-291-3228",
     "priceRange": "$$",
@@ -87,7 +88,7 @@ const Home = () => {
           "itemOffered": {
             "@type": "Service",
             "name": "Surveillance Services",
-            "description": "Professional surveillance investigations"
+            "description": "Expert surveillance investigations"
           }
         },
         {
@@ -106,7 +107,7 @@ const Home = () => {
     <>
       <SEOHead
         title="Florida Private Investigator | Emerging Investigations | Free Consultation"
-        description="Professional private investigation services across Florida. Surveillance, background checks, due diligence & more. Free consultation. Call 813.291.3228 today."
+        description="Expert private investigation services across Florida. Surveillance, background checks, due diligence & more. Free consultation. Call 813.291.3228 today."
         keywords="private investigator Florida, surveillance services Florida, background checks Florida, due diligence investigations, locate missing person Florida"
         canonical="https://emerginginv.com"
         structuredData={structuredData}
@@ -123,7 +124,7 @@ const Home = () => {
               transition={{ duration: 0.8 }}
               className="text-4xl md:text-6xl font-bold mb-6"
             >
-              Professional Private Investigation Services Florida
+              Expert Private Investigation Services Florida
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -165,7 +166,7 @@ const Home = () => {
               Comprehensive Private Investigation Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our experienced team provides professional investigation services across Florida with cutting-edge technology and proven methodologies.
+              Our experienced team provides expert investigation services across Florida with cutting-edge technology and proven methodologies.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -191,8 +192,7 @@ const Home = () => {
                   to={service.link}
                   className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
                 >
-                  Learn More
-                  <SafeIcon icon={FiIcons.FiArrowRight} className="w-4 h-4 ml-1" />
+                  Learn More <SafeIcon icon={FiIcons.FiArrowRight} className="w-4 h-4 ml-1" />
                 </Link>
               </motion.div>
             ))}
@@ -269,7 +269,7 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Statewide Coverage</h3>
               <p className="text-gray-600">
-                Serving all of Florida with local expertise in major cities including Miami, Orlando, Tampa, and Jacksonville.
+                Serving all of Florida with local expertise in major cities including Miami, Orlando, Tampa, Jacksonville, and Naples.
               </p>
             </motion.div>
           </div>
@@ -287,7 +287,7 @@ const Home = () => {
               Local expertise with statewide reach. Our private investigators serve major Florida cities and surrounding areas.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {locations.map((location, index) => (
               <motion.div
                 key={index}
@@ -307,8 +307,7 @@ const Home = () => {
                   to={location.link}
                   className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
                 >
-                  Learn More
-                  <SafeIcon icon={FiIcons.FiArrowRight} className="w-4 h-4 ml-1" />
+                  Learn More <SafeIcon icon={FiIcons.FiArrowRight} className="w-4 h-4 ml-1" />
                 </Link>
               </motion.div>
             ))}
@@ -316,8 +315,8 @@ const Home = () => {
         </div>
       </section>
 
-      <CTASection 
-        title="Need Professional Investigation Services?"
+      <CTASection
+        title="Need Expert Investigation Services?"
         subtitle="Contact Emerging Investigations today for your free consultation and case evaluation. Licensed private investigators serving all of Florida."
       />
     </>
