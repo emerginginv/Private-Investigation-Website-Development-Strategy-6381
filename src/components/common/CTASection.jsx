@@ -1,24 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import {Link} from 'react-router-dom';
+import {motion} from 'framer-motion';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../../common/SafeIcon';
 
-const { FiPhone, FiMail } = FiIcons;
+const {FiPhone,FiMail}=FiIcons;
 
-const CTASection = ({ 
-  title = "Ready to Get Started?", 
-  subtitle = "Contact us today for your free consultation and case evaluation.",
-  showBothButtons = true 
-}) => {
+const CTASection=({title="Ready to Get Started?",subtitle="Contact us today for your free consultation and case evaluation.",showBothButtons=true})=> {
   return (
-    <section className="py-16 bg-primary-600">
+    <section className="py-16 bg-primary-600 dark:bg-primary-700 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          initial={{opacity: 0,y: 20}}
+          whileInView={{opacity: 1,y: 0}}
+          transition={{duration: 0.6}}
+          viewport={{once: true}}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {title}

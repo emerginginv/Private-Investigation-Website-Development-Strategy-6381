@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../../common/SafeIcon';
 
-const { FiPhone, FiMail, FiMapPin, FiClock, FiEye } = FiIcons;
+const {FiPhone,FiMail,FiMapPin,FiClock,FiEye}=FiIcons;
 
-const Footer = () => {
+const Footer=()=> {
   return (
     <footer className="bg-secondary-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -122,6 +122,7 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
+
             <div className="pt-4">
               <h4 className="text-sm font-semibold text-white mb-2">Quick Links</h4>
               <ul className="space-y-1">
@@ -144,22 +145,42 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white">Professional Resources</h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://www.myfloridalicense.com/wl11.asp?mode=0&SID=&brd=1503" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <a
+                  href="https://www.myfloridalicense.com/wl11.asp?mode=0&SID=&brd=1503"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   FL License Verification
                 </a>
               </li>
               <li>
-                <a href="https://www.fdle.state.fl.us/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <a
+                  href="https://www.fdle.state.fl.us/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   Florida Department of Law Enforcement
                 </a>
               </li>
               <li>
-                <a href="https://www.flcourts.gov/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <a
+                  href="https://www.flcourts.gov/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   Florida Courts System
                 </a>
               </li>
               <li>
-                <a href="https://www.myfloridacfo.com/division/iff/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <a
+                  href="https://www.myfloridacfo.com/division/iff/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   FL Insurance Fraud Division
                 </a>
               </li>
@@ -170,7 +191,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-300 text-sm">
-              © 2024 Emerging Investigations. All rights reserved. Licensed Private Investigation Agency.
+              © {new Date().getFullYear()} Emerging Investigations. All rights reserved. Licensed Private Investigation Agency.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
